@@ -1,4 +1,4 @@
-peru-2014
+Peru 2014
 =========
 
 Mini site for trip to Peru
