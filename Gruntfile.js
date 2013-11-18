@@ -4,6 +4,10 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+    options: {
+      'no-beep': true
+    },
+
     sass: {
         dist: {
           options: {
@@ -11,7 +15,7 @@ module.exports = function(grunt) {
             compass: true
           },
           files: {
-            'css/main.css': 'sass/main.sass',
+            'css/peru.css': 'sass/peru.sass',
           }
         }
       },
@@ -20,7 +24,7 @@ module.exports = function(grunt) {
     	options: {
 
     	},
-  		files: 'sass/**/*.sass',
+  		files: ['sass/**/*.sass','sass/**/*.scss'],
   		tasks: 'sass'
     }
 

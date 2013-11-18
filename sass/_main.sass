@@ -1,0 +1,66 @@
+// Main styles
+
+*,
+*:before,
+*:after
+	+box-sizing(border-box)
+
+
+header,
+section,
+footer
+	padding: 50px
+
+
+header
+	background-image: url(../images/peru.svg)
+	background-repeat: no-repeat
+	background-position: right
+
+.content
+	max-width: 1200px
+	margin: 0 auto
+
+.alfa
+	background-color: $color-alfa
+.bravo
+	background-color: $color-bravo
+.charlie
+	background-color: $color-charlie
+.delta
+	color: $white
+	background-color: $color-delta
+.echo
+	color: $white
+	background-color: $color-echo
+
+
+
+/** Columns ******************************/
+/*****************************************/
+
+.columns
+	overflow: hidden
+
+.column
+	float: left
+
+.column.two
+	width: (100%/2)
+
+.column.three
+	width: (100%/3)
+
+.column.four
+	width: (100%/4)
+
+.column.five
+	width: (100%/5)
+
+
+
+/** Footer ******************************/
+/****************************************/
+
+footer
+	font-size: smaller

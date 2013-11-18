@@ -1,0 +1,46 @@
+body
+	color: $black
+	font-family: "ff-enzo-web-1", "ff-enzo-web-2", sans-serif
+	font-weight: 600
+	line-height: 1.45
+	+fsrem(20)
+
+	.no-fontface &
+		+fsrem(16)
+		font-weight: 300
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+	margin: 0
+	+rem('margin-top', 20)
+
+h1,
+h2,
+h3
+	font-family: "bree-1", "bree-2", serif
+	font-weight: 400
+	font-style: normal
+
+h1
+	+fsrem(80)
+
+h2
+	+fsrem(60)
+
+h3
+	+fsrem(40)
+
+a
+	color: $color-foxtrot
+	text-decoration: none
+	border-bottom: 1px solid transparent
+	+single-transition(all, .1s, ease-out)
+
+	&:focus,
+	&:hover
+		border-bottom: 1px solid
