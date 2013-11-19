@@ -1,5 +1,9 @@
 // Main styles
 
+
+/** General ******************************/
+/*****************************************/
+
 *,
 *:before,
 *:after
@@ -10,16 +14,8 @@ header,
 section,
 footer
 	padding: 50px
+	position: relative
 
-
-header
-	background-image: url(../images/peru.svg)
-	background-repeat: no-repeat
-	background-position: right
-
-.content
-	max-width: 1200px
-	margin: 0 auto
 
 .alfa
 	background-color: $color-alfa
@@ -33,6 +29,90 @@ header
 .echo
 	color: $white
 	background-color: $color-echo
+.foxtrot
+	background-color: $color-foxtrot
+.gamma
+	background-color: $color-gamma
+
+
+/** Header ******************************/
+/****************************************/
+
+header
+	h1,
+	p
+		position: relative
+		z-index: 1
+		max-width: 65%
+
+	img
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: auto
+		height: 100%
+		z-index: 0
+
+	.icon
+		color: darken($color-gamma, 60%)
+		margin-left: 20px
+		margin-right: 10px
+
+		&:first-child
+			margin-left: 0
+
+
+/** Content ******************************/
+/*****************************************/
+
+.content
+	max-width: 1200px
+	margin: 0 auto
+
+.decorative
+	$patternsize: 30px
+
+	// margin-top: $patternsize
+
+	&:before
+		@extend %psel
+		left: 0
+		right: 0
+		bottom: 100%
+
+		+background-image(linear-gradient(135deg, transparent 50%, $color-charlie 50%), linear-gradient(225deg, transparent 50%, $color-charlie 50%))
+		background-size: $patternsize $patternsize
+		background-position: top
+		background-color: transparent
+		height: $patternsize/2
+
+		.no-cssgradients &
+			content: none
+
+
+.alfa.decorative:before
+	+background-image(linear-gradient(135deg, transparent 50%, $color-alfa 50%), linear-gradient(225deg, transparent 50%, $color-alfa 50%))
+
+.bravo.decorative:before
+	+background-image(linear-gradient(135deg, transparent 50%, $color-bravo 50%), linear-gradient(225deg, transparent 50%, $color-bravo 50%))
+
+.charlie.decorative:before
+	+background-image(linear-gradient(135deg, transparent 50%, $color-charlie 50%), linear-gradient(225deg, transparent 50%, $color-charlie 50%))
+
+.delta.decorative:before
+	+background-image(linear-gradient(135deg, transparent 50%, $color-delta 50%), linear-gradient(225deg, transparent 50%, $color-delta 50%))
+
+.echo.decorative:before
+	+background-image(linear-gradient(135deg, transparent 50%, $color-echo 50%), linear-gradient(225deg, transparent 50%, $color-echo 50%))
+
+.foxtrot.decorative:before
+	+background-image(linear-gradient(135deg, transparent 50%, $color-foxtrot 50%), linear-gradient(225deg, transparent 50%, $color-foxtrot 50%))
+
+.gamma.decorative:before
+	+background-image(linear-gradient(135deg, transparent 50%, $color-gamma 50%), linear-gradient(225deg, transparent 50%, $color-gamma 50%))
+
+
 
 
 
@@ -44,6 +124,7 @@ header
 
 .column
 	float: left
+	padding: 0 30px
 
 .column.two
 	width: (100%/2)

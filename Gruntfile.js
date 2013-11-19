@@ -8,6 +8,17 @@ module.exports = function(grunt) {
       'no-beep': true
     },
 
+    // uglify: {
+    //   options: {
+    //     banner: '/*! <%= pkg.name %> | <%= grunt.template.today("dd-mm-yyyy - HH:mm:ss") %> */\n'
+    //   },
+    //   dist: {
+    //     files: {
+    //       'js/peru.min.js': ['js/peru.js']
+    //     }
+    //   }
+    // },
+
     sass: {
         dist: {
           options: {
@@ -31,6 +42,7 @@ module.exports = function(grunt) {
   });
 
 
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 

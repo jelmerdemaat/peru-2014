@@ -3,7 +3,7 @@ body
 	font-family: "ff-enzo-web-1", "ff-enzo-web-2", sans-serif
 	font-weight: 600
 	line-height: 1.45
-	+fsrem(20)
+	+fsrem(21)
 
 	.no-fontface &
 		+fsrem(16)
@@ -18,6 +18,10 @@ h6,
 p
 	margin: 0
 	+rem('margin-top', 20)
+	text-rendering: optimizeLegibility
+
+	&.alternative
+		color: $color-alfa
 
 h1,
 h2,
@@ -27,13 +31,14 @@ h3
 	font-style: normal
 
 h1
-	+fsrem(80)
+	+fsrem(90)
 
 h2
 	+fsrem(60)
 
 h3
 	+fsrem(40)
+
 
 a
 	color: $color-foxtrot
@@ -44,3 +49,25 @@ a
 	&:focus,
 	&:hover
 		border-bottom: 1px solid
+
+
+-webkit-::selection
+	color: $white
+	background: $color-echo
+
+-moz-::selection
+	color: $white
+	background: $color-echo
+
+::selection
+	color: $white
+	background: $color-echo
+
+
+/* maki */
+@import maki
+
+[class*="maki-"]:before
+	font-family: 'maki', sans-serif
+	font-style: normal
+	vertical-align: middle
