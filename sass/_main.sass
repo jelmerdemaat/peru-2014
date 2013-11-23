@@ -55,7 +55,7 @@ header
 		bottom: 0
 		left: 0
 
-		opacity: .1
+		opacity: 0.05
 
 		background-image: url('../images/pattern.jpg')
 		+background-size(cover)
@@ -90,8 +90,8 @@ header
 		margin-right: 10px
 		text-shadow: none
 
-		&:first-child
-			margin-left: 0
+	span:first-child .icon
+		margin-left: 0
 
 
 
@@ -114,12 +114,13 @@ nav
 	li
 		display: inline-block
 		width: 33.3333%
+		text-align: center
 
 	a
 		+fsrem(15)
 		font-weight: 700
 		text-align: center
-		display: block
+		display: inline-block
 		padding: 8px
 		border: 0
 
@@ -212,7 +213,7 @@ nav
 
 .decorative
 	$patternsize: 30px
-
+	border-bottom: 2px solid darken($color-charlie, 15%)
 	// margin-top: $patternsize
 
 	&:before,
@@ -314,6 +315,7 @@ nav
 
 .column.one
 	float: none
+	clear: left
 
 .column.two
 	width: (100%/2)

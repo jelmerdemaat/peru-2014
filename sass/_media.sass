@@ -2,12 +2,35 @@
 /***********************************************/
 
 $babysize: 768px
+$youngstersize: 950px
+$papasize: 1150px
+$grandmasize: 1300px
 
 @media all and (max-width: $babysize)
 	.column,
 	.column.one,
-	.column.two,
+	.column.two
+		width: 100%
+		padding-bottom: 60px
+
+@media all and (max-width: $youngstersize)
 	.column.three,
 	.column.four,
 	.column.five
 		width: 100%
+		padding-bottom: 60px
+
+
+@media all and (max-width: $papasize)
+	header
+		h1,
+		p
+			max-width: none
+
+@media all and (max-width: $grandmasize)
+	.about-me
+		span
+			display: block
+		.icon
+			width: 30px
+			margin-left: 0

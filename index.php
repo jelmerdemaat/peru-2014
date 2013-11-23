@@ -21,12 +21,40 @@
 			<div class="columns">
 				<div class="column">
 					<h1>Peru 2014</h1>
-					<p>Dit is een tekst waarin ik praat over naar Peru gaan. Als je wilt helpen kan je mij steunen via dit en dit en dat. <strong>Heel veeel bedankt</strong> want het is nodig. Jelmer de Maat. Dit is een tekst waarin ik praat over naar Peru gaan. Als je wilt helpen kan je mij steunen via dit en dit en dat. Heel veeel bedankt want het is nodig. Jelmer de Maat. <em>Dit is een tekst waarin</em> ik praat over naar Peru gaan. Als je wilt helpen kan je mij steunen via dit en dit en dat. Heel veeel bedankt want het is nodig. <a href="#">Jelmer de</a> Maat.</p>
+					<p>
+						Vanaf februari 2014 vertrek ik voor 12 weken naar Cusco, Peru,
+						om daar te helpen bij belangrijke vrijwilligersprojecten.
+						Via de organisatie
+						<a target="_blank" title="mijnbestemmingperu.nl" href="http://mijnbestemmingperu.nl/">Mijn Bestemming Peru</a>
+						leer ik eerst een tijd Spaans, waarna ik kan meehelpen met onder andere het lesgeven in Engels
+						aan de Peruaanse kinderen. Lees hieronder wat mijn plannen zijn, en hoe jij, als je dat wilt,
+						kunt meehelpen dit te bereiken.
+					</p>
+					<p>
+						Ik en de wees- en straatkinderen van Cusco zijn je eeuwig dankbaar!
+					</p>
+					<p>
+						<em>Jelmer</em>
+					</p>
+					<p>Meer informatie:</p>
 					<p class="about-me">
 						<?php $email = encode_email_address('post@jelmerdemaat.nl'); ?>
-						<i class="icon ion-social-twitter"></i> <a href="//twitter.com/jelmerdemaat">@jelmerdemaat</a>
-						<i class="icon ion-social-facebook"></i> <a href="//www.facebook.com/profile.php?id=100002434562108">Jelmer de Maat</a>
-						<i class="icon ion-email"></i> <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+						<span>
+							<i class="icon ion-email"></i>
+							<a href="mailto:<?php echo $email; ?>">
+								<?php echo $email; ?>
+							</a>
+						</span>
+						<span>
+							<i class="icon ion-social-twitter"></i>
+							<a href="//twitter.com/jelmerdemaat">@jelmerdemaat</a>
+						</span>
+						<span>
+							<i class="icon ion-social-facebook"></i>
+							<a href="//www.facebook.com/profile.php?id=100002434562108">
+								Jelmer de Maat
+							</a>
+						</span>
 					</p>
 				</div>
 			</div>
@@ -38,22 +66,23 @@
 			<ul class="unstyled">
 				<li><a href="#home">Home</a></li>
 				<li><a href="#wat">Wat?</a></li>
-				<li><a href="#hoe">Hoe?</a></li>
+				<li><a href="#hoe">Steunen</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<section class="fancy-image test">
-		<img src="images/jongen.jpg" alt="test">
+		<img src="images/jongen-peru.jpg" alt="test">
 	</section>
 
 	<section id="wat" class="charlie goals decorative">
 		<div class="content">
 			<div class="columns">
+
 				<div class="column one middle">
 					<h3>Wat ik wil bereiken</h3>
 				</div>
-				<div class="">
+
 					<div class="column three">
 						<h2><i class="maki-college"></i> Engels</h2>
 						<h4 class="alternative">Doel 1</h4>
@@ -69,14 +98,14 @@
 						<h4 class="alternative">Doel 3</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, eaque itaque saepe <strong>ea neque unde ex</strong> iusto cupiditate consequatur ipsum odio dicta ducimus eveniet molestias pariatur. A possimus atque consequatur.</p>
 					</div>
-				</div>
+
 
 			</div>
 		</div>
 	</section>
 
 	<section class="fancy-image test">
-		<img src="images/jongen.jpg" alt="test">
+		<img src="images/meisjes-peru-edit.jpg" alt="test">
 	</section>
 
 	<section id="hoe" class="bravo decorative">
@@ -87,15 +116,42 @@
 				</div>
 				<div class="column two">
 					<h4>Door financieel bij te dragen</h4>
-					<p>Sint officiis illo culpa saepe nam consequatur sunt. Reprehenderit, officia sapiente a quia maiores. Itaque, quia dolores eius. Voluptates, maiores, tempore, reiciendis dicta sed maxime officia fugiat commodi incidunt quod itaque doloribus quis non qui ad optio eligendi illo nesciunt quae dolores impedit distinctio.</p>
+					<p>
+						Vind je dit een mooi doel en wil je iets (kleins) bijdragen? Dat mag natuurlijk. :)
+						Alle kleine beetjes helpen! Van het geld zal de reis goed voorbereid worden,
+						en zullen ter plekke bestedingen worden gedaan die het project ten goede komen.
+						<em>Hoppa, stimulering van de lokale economie!</em>
+					</p>
+					<p>
+						Gebruik de gegevens hieronder om zelf iets over te maken, of contacteer mij voor meer details.
+						Ter info: het is belangrijk om het hele IBAN rekeningnummer te gebruiken;
+						vanaf 2014 is dat de enige geldige manier.
+					</p>
+					<p>
+						<strong>JP de Maat <br>
+						NL68 INGB 0687 9507 32</strong>
+					</p>
+					<p>
+						<small><em>Let op, dit is een apart rekeningnummer, anders dan bij jou wellicht al bekend is,
+								voor geld wat alleen voor deze reis is bedoeld. Netjes gescheiden. :)</em></small>
+					</p>
 				</div>
 				<div class="column two">
 					<h4>Door als school mee te doen</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, saepe veniam rem nemo iure possimus. Exercitationem, nisi, optio, nihil voluptates consectetur saepe deleniti facilis consequatur numquam fugit odit hic qui illum ea reprehenderit. Deleniti, quisquam, dolores sint officiis illo culpa saepe nam consequatur sunt.</p>
+					<p>
+						Het Engels leren wordt 2 keer zo leuk als we het samen kunnen doen met Nederlandse kinderen!
+					</p>
+					<p>
+						Ik bied scholen de mogelijkheid om deel te nemen aan een lesprogramma waarbij er verbinding
+						wordt gelegd tussen een Nederlandse en een Peruaanse klas.
+						Engelse teksten worden gedeeld tussen de kinderen hier en in Peru,
+						en Nederlandse kinderen krijgen speciale lessen over Peru en de derde wereld in het algemeen.
+					</p>
+					<p>
+						Voor meer informatie: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+					</p>
 				</div>
-				<div class="column one">
-					<h4>(To be continued)</h4>
-				</div>
+
 			</div>
 		</div>
 	</section>
@@ -106,14 +162,14 @@
 		<div class="content">
 			<div class="columns">
 				<div class="column two">
-					<h4>Peru 2014</h4>
+					<h5>Peru 2014</h5>
 					<p>
 						Door Jelmer de Maat <br>
-						<?php $email = encode_email_address('post@jelmerdemaat.nl'); ?>
 						Mail naar <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 					</p>
 				</div>
 				<div class="column two">
+					<h5>Updates</h5>
 				</div>
 			</div>
 		</div>
