@@ -1265,7 +1265,7 @@ nav li { display: inline-block; width: 33.3333%; text-align: center; }
 nav a { font-size: 15px; font-size: 1.5rem; font-weight: 700; text-align: center; display: inline-block; padding: 8px; border: 0; }
 nav a:hover, nav a:focus { border: 0; outline: 0; }
 nav ul:after { content: ""; width: 100%; display: inline-block; }
-nav.fixed { background: #f6f6f6; background: rgba(255, 255, 255, 0.9); top: 0; bottom: auto; z-index: 9; border-bottom: 1px solid #dddddd; }
+nav.fixed { background: #f6f6f6; top: 0; bottom: auto; z-index: 9; border-bottom: 1px solid #dddddd; }
 nav.fixed a { color: #666666; text-shadow: none; }
 
 .read-more { text-align: center; width: 10%; margin-left: -5%; position: absolute; left: 50%; top: 100%; overflow: hidden; }
