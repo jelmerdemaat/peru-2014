@@ -23,6 +23,7 @@ p
 	&.alternative
 		color: $color-alfa
 
+
 h1,
 h2,
 h3
@@ -30,15 +31,22 @@ h3
 	font-weight: 400
 	font-style: normal
 
+
 h1
-	+fsrem(90)
+	+fsrem(100)
 
 h2
 	+fsrem(60)
 
 h3
 	+fsrem(40)
+	font-weight: 200
+	margin-top: 0
+	margin-bottom: 60px
 
+h4
+	+fsrem(25)
+	font-weight: 700
 
 a
 	color: $color-foxtrot
@@ -49,6 +57,22 @@ a
 	&:focus,
 	&:hover
 		border-bottom: 1px solid
+
+img
+	vertical-align: top
+
+.middle
+	text-align: center
+
+.listleft
+	li
+		float: left
+
+.unstyled,
+.unstyled li
+	margin: 0
+	padding: 0
+	list-style: none
 
 
 -webkit-::selection
@@ -64,10 +88,12 @@ a
 	background: $color-echo
 
 
+
 /* maki */
 @import maki
 
 [class*="maki-"]:before
 	font-family: 'maki', sans-serif
+	font-weight: normal
 	font-style: normal
 	vertical-align: middle
