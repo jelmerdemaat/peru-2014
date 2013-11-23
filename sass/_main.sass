@@ -63,6 +63,9 @@ header
 
 	h1
 		text-shadow: 2px 2px 0 rgba(black, .2)
+
+		img
+			margin-top: -16px
 	h1,
 	p
 		position: relative
@@ -71,15 +74,6 @@ header
 
 	a
 		color: $color-charlie
-
-	img
-		position: absolute
-		top: 0
-		right: 0
-		bottom: 0
-		width: auto
-		height: 100%
-		z-index: 0
 
 .about-me
 	+fsrem(25)
@@ -101,7 +95,7 @@ header
 nav
 	background: darken($color-delta, 6%)
 	position: absolute
-	top: 0
+	bottom: 0
 	left: 0
 	right: 0
 	z-index: 9
@@ -138,6 +132,7 @@ nav
 
 	&.fixed
 		background: $white
+		background: rgba(white, 0.9)
 		top: 0
 		bottom: auto
 		z-index: 9

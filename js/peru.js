@@ -38,23 +38,23 @@ $(window).load(function () {
 
 	fancySetup();
 
-	// function navSetup () {
-	// 	navOffsetTop = $nav.offset().top;
-	// }
+	function navSetup () {
+		navOffsetTop = $nav.offset().top;
+	}
 
-	// navSetup();
+	navSetup();
 
-	// function fixNav () {
-	// 	if(navOffsetTop < scrollTop) {
-	// 		$nav.addClass('fixed');
-	// 	} else {
-	// 		$nav.removeClass('fixed');
-	// 	}
-	// }
+	function fixNav () {
+		if(navOffsetTop < scrollTop) {
+			$nav.addClass('fixed');
+		} else {
+			$nav.removeClass('fixed');
+		}
+	}
 
-	// fixNav();
+	fixNav();
 
-	// var $objects = {};
+	var $objects = {};
 
 	$(window).scroll(function(scrollevent){
 		$fancyImages.each(function(i, obj) {
@@ -76,7 +76,7 @@ $(window).load(function () {
 		// console.clear();
 		// console.table($objects);
 
-		// fixNav();
+		fixNav();
 	});
 
 	$.localScroll({
@@ -86,6 +86,7 @@ $(window).load(function () {
 
 	$(window).smartresize(function () {
 		fancySetup();
+		navSetup();
 	});
 
 }); // doc.ready

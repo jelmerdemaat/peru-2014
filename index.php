@@ -6,9 +6,24 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Title</title>
+	<title>Peru 2014</title>
 
-	<link rel="stylesheet" href="css/peru.css?v=0.1">
+	<link rel="stylesheet" href="css/peru.css?v=0.2">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
 
 	<script src="js/vendor/modernizr-2.7.0.min.js"></script>
 	<script src="//use.typekit.net/pec8lcm.js"></script>
@@ -20,7 +35,7 @@
 		<div class="content">
 			<div class="columns">
 				<div class="column">
-					<h1>Peru 2014</h1>
+					<h1><img src="images/flag.svg" alt="Flag" width="100"> Peru 2014</h1>
 					<p>
 						Vanaf februari 2014 vertrek ik voor 12 weken naar Cusco, Peru,
 						om daar te helpen bij belangrijke vrijwilligersprojecten.
@@ -62,12 +77,14 @@
 		<div class="read-more">
 			<a href="#wat" class="delta"><i class="icon ion-chevron-down"></i></a>
 		</div>
-		<nav class="fixed">
-			<ul class="unstyled">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#wat">Wat?</a></li>
-				<li><a href="#hoe">Steunen</a></li>
-			</ul>
+		<nav class="">
+			<div class="content">
+				<ul class="unstyled">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#wat">Wat?</a></li>
+					<li><a href="#hoe">Steunen</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
@@ -148,7 +165,8 @@
 						en Nederlandse kinderen krijgen speciale lessen over Peru en de derde wereld in het algemeen.
 					</p>
 					<p>
-						Voor meer informatie: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+						Voor meer informatie:
+						<a href="mailto:<?php echo $email; ?>?subject=<?php echo rawurlencode('Informatie over lesprogramma Peru') ?>"><?php echo $email; ?></a>
 					</p>
 				</div>
 
