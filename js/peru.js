@@ -12,10 +12,14 @@ $(window).load(function () {
 		svg.setAttribute('src', newimgsrc);
 	});
 
-	$('.goals h2').fitText(0.5, {
-		minFontSize: '37px',
-		maxFontSize: '60px'
-	});
+	function fitIt () {
+		$('.goals h2').fitText(0.65, {
+			minFontSize: '37px',
+			maxFontSize: '60px'
+		});
+	}
+
+	fitIt();
 
 	function fancySetup () {
 		$fancyImages.each(function (i, obj) {
@@ -45,11 +49,11 @@ $(window).load(function () {
 	navSetup();
 
 	function fixNav () {
-		if(navOffsetTop < scrollTop) {
-			$nav.addClass('fixed');
-		} else {
-			$nav.removeClass('fixed');
-		}
+		// if(navOffsetTop < scrollTop) {
+		// 	$nav.addClass('fixed');
+		// } else {
+		// 	$nav.removeClass('fixed');
+		// }
 	}
 
 	fixNav();
@@ -85,9 +89,11 @@ $(window).load(function () {
 
 
 	$(window).smartresize(function () {
+		fitIt();
 		fancySetup();
 		navSetup();
 	});
+
 
 }); // doc.ready
 
