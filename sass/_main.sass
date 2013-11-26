@@ -78,6 +78,7 @@ header
 
 .about-me
 	+fsrem(25)
+	max-width: none
 
 	.icon
 		color: darken($color-delta, 30%)
@@ -194,8 +195,8 @@ nav
 		i
 			color: $white
 			+fsrem(30)
-			width: 20%
-			margin-left: -10%
+			width: 40%
+			margin-left: -20%
 			position: absolute
 			left: 50%
 			bottom: 35%
@@ -298,6 +299,9 @@ nav
 	position: fixed
 	top: 0
 	bottom: auto
+
+	.touch &
+		position: static
 
 
 /** Columns ******************************/

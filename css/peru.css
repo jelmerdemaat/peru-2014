@@ -1254,7 +1254,7 @@ header h1 img { margin-top: -16px; }
 header h1, header p { position: relative; z-index: 1; max-width: 65%; }
 header a { color: #f2eed8; }
 
-.about-me { font-size: 25px; font-size: 2.5rem; }
+.about-me { font-size: 25px; font-size: 2.5rem; max-width: none; }
 .about-me .icon { color: #293f1f; margin-left: 20px; margin-right: 10px; text-shadow: none; }
 .about-me span:first-child .icon { margin-left: 0; }
 
@@ -1274,7 +1274,7 @@ nav.fixed a { color: #666666; text-shadow: none; }
 .no-csstransforms .read-more a { top: -20%; }
 .read-more a:hover, .read-more a:focus { outline: 0; border: 0; background: #568440; -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
 .no-csstransforms .read-more a:hover, .no-csstransforms .read-more a:focus { top: 0; }
-.read-more a i { color: #f6f6f6; font-size: 30px; font-size: 3rem; width: 20%; margin-left: -10%; position: absolute; left: 50%; bottom: 35%; }
+.read-more a i { color: #f6f6f6; font-size: 30px; font-size: 3rem; width: 40%; margin-left: -20%; position: absolute; left: 50%; bottom: 35%; }
 
 /*Content ***************************** */
 /*************************************** */
@@ -1313,6 +1313,7 @@ nav.fixed a { color: #666666; text-shadow: none; }
 .fancy-image img { width: 100%; }
 
 .fancy-fixed { position: fixed; top: 0; bottom: auto; }
+.touch .fancy-fixed { position: static; }
 
 /*Columns ***************************** */
 /*************************************** */
@@ -1336,8 +1337,19 @@ footer { font-size: smaller; }
 
 /*Media queries ***************************** */
 /********************************************* */
-@media all and (max-width: 768px) { .column, .column.one, .column.two { width: 100%; padding-bottom: 60px; } }
-@media all and (max-width: 950px) { .column.three, .column.four, .column.five { width: 100%; padding-bottom: 60px; } }
-@media all and (max-width: 1150px) { header h1, header p { max-width: none; } }
-@media all and (max-width: 1300px) { .about-me span { display: block; }
-  .about-me .icon { width: 30px; margin-left: 0; } }
+@media all and (max-width: 1150px) { html { font-size: 58%; }
+  h1 { font-size: 80px; font-size: 8rem; }
+  .about-me { font-size: 21px; font-size: 2.1rem; }
+  header { padding: 70px 50px; }
+  header h1, header p { max-width: none; } }
+@media all and (max-width: 950px) { .column.three, .column.four, .column.five { width: 100%; padding-top: 60px; }
+  .column.three:first-child, .column.four:first-child, .column.five:first-child { padding-top: 0; } }
+@media all and (max-width: 768px) { header, section, footer { padding-left: 20px; padding-right: 20px; padding-bottom: 90px; }
+  header h1 { font-size: 60px; font-size: 6rem; }
+  header h1 img { position: absolute; right: 0; bottom: 0; top: 0; margin: auto; }
+  .about-me span { display: block; }
+  .about-me .icon { margin-left: 0; }
+  .column, .column.one, .column.two { width: 100%; padding-top: 60px; }
+  .column:first-child, .column.one:first-child, .column.two:first-child { padding-top: 0; } }
+@media all and (max-width: 480px) { header h1 img { display: none; }
+  .read-more { display: none; } }

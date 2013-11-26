@@ -1,36 +1,85 @@
 /** Media queries ******************************/
 /***********************************************/
 
+$embryosize: 480px
 $babysize: 768px
 $youngstersize: 950px
 $papasize: 1150px
 $grandmasize: 1300px
 
-@media all and (max-width: $babysize)
-	.column,
-	.column.one,
-	.column.two
-		width: 100%
-		padding-bottom: 60px
+
+@media all and (max-width: $grandmasize)
+
+
+
+@media all and (max-width: $papasize)
+	html
+		font-size: 58%
+
+	h1
+		+fsrem(80)
+
+	.about-me
+		+fsrem(21)
+
+	header
+		padding: 70px 50px
+		h1,
+		p
+			max-width: none
+
+
 
 @media all and (max-width: $youngstersize)
 	.column.three,
 	.column.four,
 	.column.five
 		width: 100%
-		padding-bottom: 60px
+		padding-top: 60px
 
+		&:first-child
+			padding-top: 0
 
-@media all and (max-width: $papasize)
+@media all and (max-width: $babysize)
+	header,
+	section,
+	footer
+		padding-left: 20px
+		padding-right: 20px
+		padding-bottom: 90px
+
 	header
-		h1,
-		p
-			max-width: none
+		h1
+			+fsrem(60)
 
-@media all and (max-width: $grandmasize)
+			img
+				position: absolute
+				right: 0
+				bottom: 0
+				top: 0
+				margin: auto
+
 	.about-me
 		span
 			display: block
 		.icon
-			width: 30px
 			margin-left: 0
+
+	.column,
+	.column.one,
+	.column.two
+		width: 100%
+		padding-top: 60px
+
+		&:first-child
+			padding-top: 0
+
+
+
+
+@media all and (max-width: $embryosize)
+	header
+		h1 img
+			display: none
+	.read-more
+		display: none
