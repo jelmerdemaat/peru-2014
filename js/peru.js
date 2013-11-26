@@ -83,9 +83,11 @@ $(window).load(function () {
 		fixNav();
 	});
 
+	var _gaq = _gaq || [];
+
 	$.localScroll({
 		duration: 550,
-		onAfter: function (e, elem) {
+		onBefore: function (e, elem) {
 			// _trackEvent(category, action, opt_label, opt_value, opt_noninteraction);
 			_gaq.push([ '_trackEvent', 'Local links', e.type, e.toElement.innerText, e.toElement.href  ]);
 		}
