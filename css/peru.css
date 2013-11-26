@@ -1315,6 +1315,10 @@ nav.fixed a { color: #666666; text-shadow: none; }
 .fancy-fixed { position: fixed; top: 0; bottom: auto; }
 .touch .fancy-fixed { position: static; }
 
+/*Twitter ***************************** */
+/*************************************** */
+.twitter-timeline { margin-top: 20px; margin-top: 2rem; }
+
 /*Columns ***************************** */
 /*************************************** */
 .columns { overflow: hidden; }
