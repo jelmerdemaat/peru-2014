@@ -95,6 +95,14 @@ $(window).load(function () {
 	});
 
 
+	// Tracking hashes
+	// http://stackoverflow.com/questions/4811172/is-it-possible-to-track-hash-links-like-pages-with-google-analytics
+
+	$(window).hashchange( function(){
+	    _gaq.push(['_trackPageview',location.pathname + location.search  + location.hash]);
+	})
+
+
 }); // doc.ready
 
 
