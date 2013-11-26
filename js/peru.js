@@ -83,13 +83,13 @@ $(window).load(function () {
 		fixNav();
 	});
 
-	var _gaq = _gaq || [];
+	// var _gaq = _gaq || [];
 
 	$.localScroll({
 		duration: 550,
 		onBefore: function (e, elem) {
 			// _trackEvent(category, action, opt_label, opt_value, opt_noninteraction);
-			_gaq.push([ '_trackEvent', 'Local links', e.type, e.toElement.innerText, e.toElement.href  ]);
+			// _gaq.push([ '_trackEvent', 'Local links', e.type, e.toElement.innerText, e.toElement.href  ]);
 		}
 	});
 
