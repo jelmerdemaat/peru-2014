@@ -66,6 +66,8 @@ header
 
 		img
 			margin-top: -16px
+			max-width: 100px
+			max-height: 67px
 
 	h1,
 	p
@@ -104,12 +106,9 @@ nav
 
 	+transition(all .2s ease)
 
-	font-size: 0
-	text-align: justify
-
 	li
 		display: inline-block
-		width: 33.3333%
+		width: 33%
 		text-align: center
 
 	a
@@ -127,10 +126,6 @@ nav
 			border: 0
 			outline: 0
 
-	ul:after
-		content: ""
-		width: 100%
-		display: inline-block
 
 	&.fixed
 		background: $white
