@@ -20,9 +20,8 @@ p
 	+rem('margin-top', 20)
 	text-rendering: optimizeLegibility
 
-	&.alternative
-		color: $color-alfa
-
+p
+	text-rendering: auto
 
 h1,
 h2,
@@ -33,7 +32,7 @@ h3
 
 
 h1
-	+fsrem(100)
+	+fsrem(80)
 
 h2
 	+fsrem(60)
@@ -86,17 +85,3 @@ img
 ::selection
 	color: $white
 	background: $color-echo
-
-
-
-.icon
-	vertical-align: middle
-
-/* maki */
-@import maki
-
-[class*="maki-"]:before
-	font-family: 'maki', sans-serif
-	font-weight: normal
-	font-style: normal
-	vertical-align: middle

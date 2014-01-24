@@ -15,26 +15,7 @@
 header,
 section,
 footer
-	padding: 100px 50px 120px 50px
 	position: relative
-
-
-.alfa
-	background-color: $color-alfa
-.bravo
-	background-color: $color-bravo
-.charlie
-	background-color: $color-charlie
-.delta
-	color: $white
-	background-color: $color-delta
-.echo
-	color: $white
-	background-color: $color-echo
-.foxtrot
-	background-color: $color-foxtrot
-.gamma
-	background-color: $color-gamma
 
 .fixed
 	position: fixed
@@ -42,299 +23,27 @@ footer
 /** Header ******************************/
 /****************************************/
 
-header
-	text-shadow: 1px 1px 0 rgba(black, .2)
-	padding: 100px 50px 90px 50px
-
-	+box-shadow(0 10px 30px rgba(black, .4))
-
-	&:after
-		@extend %psel
-		top: 0
-		right: 0
-		bottom: 0
-		left: 0
-
-		opacity: 0.05
-
-		background-image: url('../images/pattern.jpg')
-		+background-size(cover)
-
-		.no-backgroundsize &
-			content: none
-
-	h1
-		text-shadow: 2px 2px 0 rgba(black, .2)
-
-		img
-			margin-top: -16px
-			max-width: 100px
-			max-height: 67px
-
-	h1,
-	p
-		position: relative
-		z-index: 1
-		max-width: 65%
-
-	a
-		color: $color-charlie
-
-.about-me
-	+fsrem(25)
-	max-width: none
-
-	.icon
-		color: darken($color-delta, 30%)
-		margin-left: 20px
-		margin-right: 10px
-		text-shadow: none
-
-	span:first-child .icon
-		margin-left: 0
 
 
+/** Aside ******************************/
+/***************************************/
+
+float: right
 
 /** Navigation ******************************/
 /********************************************/
 
-nav
-	background: darken($color-delta, 6%)
-	position: absolute
-	bottom: 0
-	left: 0
-	right: 0
-	z-index: 9
 
-	+transition(all .2s ease)
-
-	li
-		display: inline-block
-		width: 33%
-		text-align: center
-
-	a
-		+fsrem(15)
-		font-weight: 700
-		text-align: center
-		display: inline-block
-		padding: 8px
-		border: 0
-
-		// +box-shadow(inset 0 0 30px rgba(black, .3))
-
-		&:hover,
-		&:focus
-			border: 0
-			outline: 0
-
-
-	&.fixed
-		background: $white
-		// background: rgba(white, 0.9)
-		top: 0
-		bottom: auto
-		z-index: 9
-		border-bottom: 1px solid #ddd
-
-		a
-			color: lighten($black, 20%)
-			text-shadow: none
-
-.read-more
-	text-align: center
-
-	width: 10%
-	margin-left: -5%
-	position: absolute
-	left: 50%
-	top: 100%
-
-	overflow: hidden
-
-	&:before
-		@extend %psel
-		top: 0
-		left: 0
-		right: 0
-		height: 15%
-		z-index: 2
-
-		+background-image(linear-gradient(rgba(black, .2), transparent))
-
-
-	a
-		display: block
-		height: 0
-		padding-top: 90%
-		border: 0
-		outline: 0
-		border-bottom-left-radius: 50%
-		border-bottom-right-radius: 50%
-		position: relative
-
-		+translateY(-20%)
-		.no-csstransforms &
-			top: -20%
-
-		&:hover,
-		&:focus
-			outline: 0
-			border: 0
-			background: darken($color-delta, 10%)
-			// +box-shadow(0 10px 10px black)
-			+translateY(0)
-
-			.no-csstransforms &
-				top: 0
-
-
-		i
-			color: $white
-			+fsrem(30)
-			width: 40%
-			margin-left: -20%
-			position: absolute
-			left: 50%
-			bottom: 35%
 
 /** Content ******************************/
 /*****************************************/
 
-.content
-	max-width: 1200px
-	margin: 0 auto
 
-.decorative
-	$patternsize: 30px
-	border-bottom: 2px solid darken($color-charlie, 15%)
-	// margin-top: $patternsize
-
-	&:before,
-	&:after
-		@extend %psel
-		left: 0
-		right: 0
-		bottom: 100%
-		z-index: 1
-
-		+background-image(linear-gradient(135deg, transparent 50%, $color-charlie 50%), linear-gradient(225deg, transparent 50%, $color-charlie 50%))
-		background-size: $patternsize $patternsize
-		background-position: 0 0
-		background-repeat: repeat-x
-		background-color: transparent
-		height: $patternsize/2
-
-		.no-cssgradients &
-			content: none
-
-	&:after
-		+background-image(linear-gradient(135deg, transparent 50%, $color-foxtrot 50%), linear-gradient(225deg, transparent 50%, lighten($color-foxtrot, 25%) 50%))
-		z-index: 0
-		background-position: $patternsize/2 $patternsize/10
-
-
-.alfa.decorative:before
-	+background-image(linear-gradient(135deg, transparent 50%, $color-alfa 50%), linear-gradient(225deg, transparent 50%, lighten($color-alfa, 5%) 50%))
-
-.bravo.decorative:before
-	+background-image(linear-gradient(135deg, transparent 50%, $color-bravo 50%), linear-gradient(225deg, transparent 50%, lighten($color-bravo, 5%) 50%))
-
-.charlie.decorative:before
-	+background-image(linear-gradient(135deg, transparent 50%, $color-charlie 50%), linear-gradient(225deg, transparent 50%, lighten($color-charlie, 5%) 50%))
-
-.delta.decorative:before
-	+background-image(linear-gradient(135deg, transparent 50%, $color-delta 50%), linear-gradient(225deg, transparent 50%, lighten($color-delta, 5%) 50%))
-
-.echo.decorative:before
-	+background-image(linear-gradient(135deg, transparent 50%, $color-echo 50%), linear-gradient(225deg, transparent 50%, lighten($color-echo, 5%) 50%))
-
-.foxtrot.decorative:before
-	+background-image(linear-gradient(135deg, transparent 50%, $color-foxtrot 50%), linear-gradient(225deg, transparent 50%, lighten($color-foxtrot, 5%) 50%))
-
-.gamma.decorative:before
-	+background-image(linear-gradient(135deg, transparent 50%, $color-gamma 50%), linear-gradient(225deg, transparent 50%, lighten($color-gamma, 5%) 50%))
-
-
-.goals
-	h2
-		text-align: center
-		line-height: 1.4
-		margin: 0
-		white-space: nowrap
-
-		i
-			color: lighten($black, 20%)
-			display: block
-			margin: 0
-			height: 70px
-			line-height: 70px
-
-	h4
-		margin: 0
-		text-align: center
-
-.bump-bottom
-	margin-bottom: 60px
-
-.bump-top
-	margin-top: 60px
-
-.bump-both
-	margin: 60px auto
-
-.fancy-image
-	padding: 0
-	z-index: -1
-	// padding: 0 0 20% 0
-
-	img
-		width: 100%
-		// height: 100%
-
-.fancy-fixed
-	position: fixed
-	top: 0
-	bottom: auto
-
-	.touch &
-		position: static
 
 
 /** Twitter ******************************/
 /*****************************************/
 
-
-.twitter-timeline
-	+rem('margin-top', 20)
-
-
-
-/** Columns ******************************/
-/*****************************************/
-
-.columns
-	overflow: hidden
-
-.column
-	float: left
-	padding: 0 30px
-
-.column.one
-	float: none
-	clear: left
-
-.column.two
-	width: (100%/2)
-
-.column.three
-	width: (100%/3)
-
-.column.four
-	width: (100%/4)
-
-.column.five
-	width: (100%/5)
 
 
 
@@ -343,8 +52,3 @@ nav
 
 footer
 	font-size: smaller
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2)
-
-	.icon
-		+fsrem(25)
-		min-width: 40px
