@@ -1,0 +1,10 @@
+name: Peru 2014
+markdown: redcarpet
+pygments: false
+destination: _site
+exclude: [
+	"node_modules",
+	"sources",
+	".sass-cache",
+	"sass"
+]

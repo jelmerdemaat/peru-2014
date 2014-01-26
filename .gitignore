@@ -1,6 +1,7 @@
 /sources/
 /node_modules/
 *.ai
+/_site/
 
 # Compiled source #
 ###################

@@ -2,7 +2,7 @@ body
 	color: $black
 	font-family: "ff-enzo-web-1", "ff-enzo-web-2", sans-serif
 	font-weight: 600
-	line-height: 1.45
+	line-height: 1.55
 	+fsrem(21)
 
 	.no-fontface &
@@ -17,48 +17,72 @@ h5,
 h6,
 p
 	margin: 0
-	+rem('margin-top', 20)
 	text-rendering: optimizeLegibility
 
 p
 	text-rendering: auto
+	+remsize(margin-bottom, 10)
 
 h1,
 h2,
 h3
 	font-family: "bree-1", "bree-2", serif
-	font-weight: 400
+	font-weight: bold
 	font-style: normal
-
+	line-height: 1.2
 
 h1
-	+fsrem(80)
-
-h2
 	+fsrem(60)
 
-h3
+h2
 	+fsrem(40)
-	font-weight: 200
-	margin-top: 0
-	margin-bottom: 60px
+	+remsize(margin-bottom, 20)
+
+h3
+	+fsrem(30)
 
 h4
 	+fsrem(25)
-	font-weight: 700
 
 a
-	color: lighten($color-foxtrot, 15%)
+	color: $color-foxtrot
+	font-weight: bold
 	text-decoration: none
 	border-bottom: 1px solid transparent
 	+single-transition(all, .1s, ease-out)
 
 	&:focus,
 	&:hover
-		border-bottom: 1px solid
+		color: darken($color-foxtrot, 15%)
 
 img
-	vertical-align: middle
+	vertical-align: top
+	max-width: 100%
+	+remsize(margin-top, 20)
+	+remsize(margin-bottom, 20)
+
+figure
+	+remsize(margin-bottom, 20)
+
+figcaption
+	+fsrem(18)
+	font-family: $breestack
+	font-weight: 400
+	font-style: italic
+	text-align: center
+
+time
+	color: lighten($black, 30%)
+	+fsrem(15)
+	text-transform: uppercase
+	display: block
+	position: relative
+	+remsize(margin-bottom, 20)
+
+
+
+
+
 
 .middle
 	text-align: center

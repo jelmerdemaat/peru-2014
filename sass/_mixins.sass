@@ -2,11 +2,14 @@
 	font-size: #{$px}px
 	font-size: #{$px/10}rem
 
-=rem($property, $pxvalue)
-	#{$property}: #{$pxvalue}px
-	#{$property}: #{$pxvalue/10}rem
+=remsize($property: width, $px: 100)
+	#{$property}: #{$px}px
+	#{$property}: #{$px/10}rem
 
 %psel
 	content: ""
 	position: absolute
 	display: block
+
+.fixed
+	position: fixed

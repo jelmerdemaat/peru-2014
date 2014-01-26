@@ -11,24 +11,27 @@
 *:after
 	+box-sizing(border-box)
 
-
-header,
-section,
-footer
-	position: relative
-
-.fixed
-	position: fixed
+body
+	margin: 0 auto
+	+remsize(margin-top, 60)
+	+remsize(max-width, 900)
 
 /** Header ******************************/
 /****************************************/
 
-
+header
+	font-size: smaller
+	border-bottom: 3px solid lighten($black, 10%)
+	+remsize(padding-bottom, 50)
+	+remsize(margin-bottom, 50)
 
 /** Aside ******************************/
 /***************************************/
 
-float: right
+aside
+	@extend %sidepart
+
+
 
 /** Navigation ******************************/
 /********************************************/
@@ -39,6 +42,19 @@ float: right
 /*****************************************/
 
 
+main
+	float: left
+	width: 75%
+
+article
+	border-bottom: 1px dashed
+	+remsize(padding-bottom, 50)
+	+remsize(margin-bottom, 50)
+
+.intro
+	+fsrem(19)
+	font-weight: bold
+	+remsize(margin-bottom, 30)
 
 
 /** Twitter ******************************/
@@ -51,4 +67,10 @@ float: right
 /****************************************/
 
 footer
+	@extend %sidepart
+
+%sidepart
 	font-size: smaller
+	float: right
+	text-align: right
+	width: 25%
