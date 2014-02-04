@@ -186,7 +186,7 @@ time { color: #919191; font-size: 15px; font-size: 1.5rem; text-transform: upper
 /*************************************** */
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { margin: 0 auto; margin-top: 60px; margin-top: 6rem; max-width: 900px; max-width: 90rem; }
+body { margin: 0 auto; margin-top: 60px; margin-top: 6rem; max-width: 80%; }
 
 /*Header ***************************** */
 /************************************** */
@@ -198,7 +198,7 @@ header { font-size: smaller; border-bottom: 3px solid #5e5e5e; padding-bottom: 5
 /****************************************** */
 /*Content ***************************** */
 /*************************************** */
-main { float: left; width: 75%; }
+main { float: left; width: 70%; }
 
 article { border-bottom: 1px dashed; padding-bottom: 50px; padding-bottom: 5rem; margin-bottom: 50px; margin-bottom: 5rem; }
 
@@ -208,7 +208,8 @@ article { border-bottom: 1px dashed; padding-bottom: 50px; padding-bottom: 5rem;
 /*************************************** */
 /*Footer ***************************** */
 /************************************** */
-aside, footer { font-size: smaller; float: right; text-align: right; width: 25%; }
+aside, footer { font-size: 16px; font-size: 1.6rem; float: right; text-align: right; width: 21%; }
 
 /*Media queries ***************************** */
 /********************************************* */
+@media all and (min-width: 1150px) { body { max-width: 900px; max-width: 90rem; } }

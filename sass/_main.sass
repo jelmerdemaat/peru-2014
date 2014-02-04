@@ -14,7 +14,7 @@
 body
 	margin: 0 auto
 	+remsize(margin-top, 60)
-	+remsize(max-width, 900)
+	max-width: 80%
 
 /** Header ******************************/
 /****************************************/
@@ -32,7 +32,6 @@ aside
 	@extend %sidepart
 
 
-
 /** Navigation ******************************/
 /********************************************/
 
@@ -44,7 +43,7 @@ aside
 
 main
 	float: left
-	width: 75%
+	width: 70%
 
 article
 	border-bottom: 1px dashed
@@ -70,7 +69,7 @@ footer
 	@extend %sidepart
 
 %sidepart
-	font-size: smaller
+	+fsrem(16)
 	float: right
 	text-align: right
-	width: 25%
+	width: 21%
