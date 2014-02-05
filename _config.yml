@@ -8,3 +8,7 @@ exclude: [
 	".sass-cache",
 	"sass"
 ]
+timezone: Europe/Amsterdam
+permalink: /:title
+baseurl:  /
+url: http://peru2014.nl/

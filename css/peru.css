@@ -159,7 +159,7 @@ h3 { font-size: 30px; font-size: 3rem; }
 
 h4 { font-size: 25px; font-size: 2.5rem; }
 
-a { color: #e11208; font-weight: bold; text-decoration: none; border-bottom: 1px solid transparent; -webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out; }
+a { color: #e11208; font-weight: bold; text-decoration: none; white-space: nowrap; border-bottom: 1px solid transparent; -webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out; }
 a:focus, a:hover { color: #970c05; }
 
 img { vertical-align: top; max-width: 100%; margin-top: 20px; margin-top: 2rem; margin-bottom: 20px; margin-bottom: 2rem; }
@@ -209,6 +209,7 @@ article { border-bottom: 1px dashed; padding-bottom: 50px; padding-bottom: 5rem;
 /*Footer ***************************** */
 /************************************** */
 aside, footer { font-size: 16px; font-size: 1.6rem; float: right; text-align: right; width: 21%; }
+aside div, footer div { margin-bottom: 60px; margin-bottom: 6rem; }
 
 /*Media queries ***************************** */
 /********************************************* */

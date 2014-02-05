@@ -23,6 +23,7 @@ module.exports = function(grunt) {
 			},
 			dist: {                             // Target
 				options: {                        // Target options
+
 				}
 			}
 		},
@@ -30,8 +31,14 @@ module.exports = function(grunt) {
 			options: {
 				livereload: true
 			},
-			files: ['sass/**/*.sass','sass/**/*.scss','**/*.htm'],
-			tasks: 'sass'
+			files: [
+				'sass/**/*.sass',
+				'sass/**/*.scss',
+				'*.htm',
+				'_layouts/*.htm',
+				'_posts/*.htm'
+				],
+			tasks: ['sass','jekyll']
 		}
 	});
 
