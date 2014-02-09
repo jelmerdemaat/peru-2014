@@ -36,7 +36,8 @@ module.exports = function(grunt) {
 				'sass/**/*.scss',
 				'*.htm',
 				'_layouts/*.htm',
-				'_posts/*.htm'
+				'_posts/*.htm',
+				'_posts/*.md'
 				],
 			tasks: ['sass','jekyll']
 		}
