@@ -12,6 +12,6 @@ Dan kom er nog bij dat hun andere zoon (Oscar, één jaar jonger) Industrial Eng
 
 De volgende keer dat ik hier iets neerzet zal het misschien een iets uitgebreider en enigzins georganiseerd verhaal zijn, uiteraard met foto’s en al. Voor nu zullen jullie het hiermee moeten doen, plus de notie dat het dus heel goed gaat hier. Maakt u geen zorgen, en tot later! :)
 
-Ciao!
+Chao!
 
 <small>(Ja, dat zeggen ze hier ook.)</small>
