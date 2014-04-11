@@ -29,7 +29,14 @@ header
 /***************************************/
 
 aside
-	@extend %sidepart
+	+fsrem(16)
+	overflow: hidden
+	+remsize(margin-bottom, 50)
+
+	li,
+	.unstyled li
+		float: left
+		+remsize(margin-right, 50)
 
 
 /** Navigation ******************************/
@@ -43,7 +50,6 @@ aside
 
 main
 	float: left
-	width: 70%
 
 article
 	border-bottom: 1px dashed

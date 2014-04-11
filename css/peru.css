@@ -194,11 +194,14 @@ header { font-size: smaller; border-bottom: 3px solid #5e5e5e; padding-bottom: 5
 
 /*Aside ***************************** */
 /************************************* */
+aside { font-size: 16px; font-size: 1.6rem; overflow: hidden; margin-bottom: 50px; margin-bottom: 5rem; }
+aside li, aside .unstyled li { float: left; margin-right: 50px; margin-right: 5rem; }
+
 /*Navigation ***************************** */
 /****************************************** */
 /*Content ***************************** */
 /*************************************** */
-main { float: left; width: 70%; }
+main { float: left; }
 
 article { border-bottom: 1px dashed; padding-bottom: 50px; padding-bottom: 5rem; margin-bottom: 50px; margin-bottom: 5rem; }
 
@@ -208,9 +211,14 @@ article { border-bottom: 1px dashed; padding-bottom: 50px; padding-bottom: 5rem;
 /*************************************** */
 /*Footer ***************************** */
 /************************************** */
-aside, footer { font-size: 16px; font-size: 1.6rem; float: right; text-align: right; width: 21%; }
-aside div, footer div { margin-bottom: 60px; margin-bottom: 6rem; }
+footer { font-size: 16px; font-size: 1.6rem; float: right; text-align: right; width: 21%; }
+footer div { margin-bottom: 60px; margin-bottom: 6rem; }
 
 /*Media queries ***************************** */
 /********************************************* */
+footer { font-size: 16px; font-size: 1.6rem; float: right; text-align: right; width: 21%; }
+
 @media all and (min-width: 1150px) { body { max-width: 900px; max-width: 90rem; } }
+@media all and (min-width: 950px) { aside { float: right; text-align: right; width: 21%; margin-bottom: 0; }
+  aside li, aside .unstyled li { float: none; margin-right: 0; } }
+@media all and (min-width: 768px) { main { width: 70%; } }

@@ -7,6 +7,12 @@ $youngstersize: 950px
 $papasize: 1150px
 $grandmasize: 1300px
 
+%sidepart
+	+fsrem(16)
+	float: right
+	text-align: right
+	width: 21%
+
 
 @media all and (min-width: $grandmasize)
 
@@ -15,7 +21,19 @@ $grandmasize: 1300px
 		+remsize(max-width, 900)
 
 @media all and (min-width: $youngstersize)
+	aside
+		float: right
+		text-align: right
+		width: 21%
+		margin-bottom: 0
+
+		li,
+		.unstyled li
+			float: none
+			margin-right: 0
 
 @media all and (min-width: $babysize)
+	main
+		width: 70%
 
 @media all and (min-width: $embryosize)
