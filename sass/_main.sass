@@ -16,6 +16,22 @@ body
 	+remsize(margin-top, 60)
 	max-width: 80%
 
+
+// html
+// 	&:after
+// 		background-image: linear-gradient(transparent, transparent 15%, white), url('../images/background.jpg')
+// 		height: 0
+// 		padding-top: 50%
+// 		display: block
+// 		position: absolute
+// 		top: 0
+// 		left: 0
+// 		right: 0
+// 		background-size: cover
+// 		content: ""
+// 		z-index: -1
+
+
 /** Header ******************************/
 /****************************************/
 
@@ -55,6 +71,12 @@ article
 	border-bottom: 1px dashed
 	+remsize(padding-bottom, 50)
 	+remsize(margin-bottom, 50)
+
+	h2
+		text-transform: lowercase
+
+		&:first-letter
+			text-transform: uppercase
 
 .intro
 	+fsrem(19)
