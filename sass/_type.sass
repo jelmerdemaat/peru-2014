@@ -27,10 +27,14 @@ p
 h1,
 h2,
 h3
-	font-family: "bree-1", "bree-2", serif
+	font-family: $breestack
 	font-weight: bold
 	font-style: normal
 	line-height: 1.2
+
+	.wf-inactive &,
+	.no-fontface &
+		font-weight: normal
 
 h1
 	+fsrem(60)
