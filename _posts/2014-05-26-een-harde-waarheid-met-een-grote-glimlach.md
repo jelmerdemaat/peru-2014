@@ -6,6 +6,11 @@ De jongens die wonen in het weeshuis komen uit allerlei verschillende plaatsen, 
 
 Vanaf acht jaar oud mag een jongen normaliter het weeshuis in, tot aan zijn achttiende levensjaar. Daarna wordt hij met financiële en sociale hulp “het echte leven” in gestuurd, en wordt hij voor nog een jaar gevolgd.
 
+<figure>
+	<img src="../images/dejongens.jpg" alt="De jongens">
+	<figcaption>De jongens op de trap naast de speelplaats. Links een deel van het weeshuis.</figcaption>
+</figure>
+
 De kinderen komen soms naar het weeshuis omdat ze geen ouders hebben, maar vaker omdat ze slechte ouders hebben. Ouders die teveel drinken, ouders die ziek zijn en hun kinderen niet kunnen verzorgen, of ouders die hun kinderen mishandelen. Ook worden sommige gehandicapte kinderen in Peru niet even gemakkelijk geaccepteerd in een familie als in Nederland. Af en toe vraag ik één van de jongens naar hun achtergrond. Ik vind het altijd interessant om te horen, en naarmate ik ze beter ken voelt het niet meer ongemakkelijk om naar hun verhaal te vragen.
 
 Een van de jongens in het weeshuis valt op omdat hij zijn arm altijd gedwongen in dezelfde positie houdt. Ook loopt het met één van zijn benen minder goed; het is een beetje gebogen, vervormd. Desalniettemin is hij net zo spraakzaam en brutaal als de rest van de groep. Ik help hem vaak met zijn huiswerk: lezen en schrijven (ook goed voor mijn Spaans) en simpel rekenen. Toen hij op een dag vroeg aan mij of ik broers en zussen heb, zag ik kans om door te vragen naar zijn eigen familie. Zijn ouders leven zeker nog, vertelde hij, maar ze drinken erg veel. Zelf probeerde hij ooit bier uit een flesje, op straat, toen hij twaalf jaar oud was (nu is hij niet veel ouder, schat ik). Hij vond het vies en heeft het sindsdien niet meer gedronken. Op een dag is hij uit huis gevlucht, in zijn eentje, weg van zijn ouders. Blijkbaar leek de situatie thuis voor hem erger dan de situatie op straat. Hij liet naast zijn ouders ook zijn broers en zussen achter. Van allen heeft hij tot op heden niemand meer gezien.
